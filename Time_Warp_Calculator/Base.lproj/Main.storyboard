@@ -29,12 +29,12 @@
                                     <constraint firstAttribute="width" secondItem="Kpp-D9-KhA" secondAttribute="height" multiplier="1:1" id="TcE-53-jfH"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="xJi-1E-mRI">
-                                <rect key="frame" x="0.0" y="530" width="600" height="70"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="xJi-1E-mRI">
+                                <rect key="frame" x="0.0" y="528" width="600" height="72"/>
                                 <animations/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZeW-89-yMd">
-                                <rect key="frame" x="186" y="135" width="228" height="409"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZeW-89-yMd">
+                                <rect key="frame" x="186" y="62" width="228" height="476"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="yLE-bb-Vj1">
                                         <rect key="frame" x="0.0" y="0.0" width="228" height="65"/>
@@ -45,18 +45,31 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="2eV-B3-Dbo">
-                                        <rect key="frame" x="0.0" y="65" width="228" height="344"/>
+                                        <rect key="frame" x="0.0" y="70" width="228" height="344"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="260" id="Ld9-4r-noe"/>
                                             <constraint firstAttribute="height" constant="344" id="lKP-Lr-ywY"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Ld9-4r-noe"/>
+                                            </mask>
+                                        </variation>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dor-Li-5Pv">
+                                        <rect key="frame" x="0.0" y="419" width="228" height="57"/>
+                                        <animations/>
+                                        <state key="normal" image="clear"/>
+                                        <connections>
+                                            <action selector="btnClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7tw-xl-dgF"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <animations/>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="qUj-75-UT9">
-                                <rect key="frame" x="198" y="216" width="205" height="313"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="qUj-75-UT9">
+                                <rect key="frame" x="198" y="153" width="205" height="313"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dY6-J8-DXd">
                                         <rect key="frame" x="0.0" y="0.0" width="205" height="57"/>
@@ -271,8 +284,8 @@
                                 </subviews>
                                 <animations/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLg-db-dZN">
-                                <rect key="frame" x="191" y="156" width="212" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLg-db-dZN">
+                                <rect key="frame" x="191" y="83" width="212" height="34"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="212" id="ejS-30-XC3"/>
@@ -285,18 +298,18 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qUj-75-UT9" firstAttribute="centerY" secondItem="ZeW-89-yMd" secondAttribute="centerY" constant="33" id="2N5-dK-j7e"/>
+                            <constraint firstItem="qUj-75-UT9" firstAttribute="centerY" secondItem="ZeW-89-yMd" secondAttribute="centerY" constant="9" id="2N5-dK-j7e"/>
                             <constraint firstItem="ZeW-89-yMd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Srs-I4-Vm1"/>
                             <constraint firstItem="qUj-75-UT9" firstAttribute="centerX" secondItem="ZeW-89-yMd" secondAttribute="centerX" id="UjC-VV-Hmc"/>
                             <constraint firstItem="Kpp-D9-KhA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="evF-xd-xP1"/>
-                            <constraint firstItem="ZLg-db-dZN" firstAttribute="trailing" secondItem="ZeW-89-yMd" secondAttribute="trailing" constant="-15" id="fhk-w4-Rar"/>
+                            <constraint firstItem="ZLg-db-dZN" firstAttribute="trailing" secondItem="ZeW-89-yMd" secondAttribute="trailing" constant="-11" id="fhk-w4-Rar"/>
                             <constraint firstAttribute="trailing" secondItem="Kpp-D9-KhA" secondAttribute="trailing" id="iWo-6v-4T6"/>
                             <constraint firstItem="Kpp-D9-KhA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mbi-u7-m6h"/>
                             <constraint firstItem="xJi-1E-mRI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ujq-kP-bV1"/>
                             <constraint firstItem="ZeW-89-yMd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uts-Be-lL3"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kpp-D9-KhA" secondAttribute="bottom" id="xEf-sS-Icg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xJi-1E-mRI" secondAttribute="bottom" id="xcI-Mw-pbE"/>
-                            <constraint firstItem="ZLg-db-dZN" firstAttribute="top" secondItem="ZeW-89-yMd" secondAttribute="top" constant="20" id="xhm-4R-7Bt"/>
+                            <constraint firstItem="ZLg-db-dZN" firstAttribute="top" secondItem="ZeW-89-yMd" secondAttribute="top" constant="21" id="xhm-4R-7Bt"/>
                             <constraint firstAttribute="trailing" secondItem="xJi-1E-mRI" secondAttribute="trailing" id="yBe-3N-qbS"/>
                         </constraints>
                     </view>
@@ -322,6 +335,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="166" height="57"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
