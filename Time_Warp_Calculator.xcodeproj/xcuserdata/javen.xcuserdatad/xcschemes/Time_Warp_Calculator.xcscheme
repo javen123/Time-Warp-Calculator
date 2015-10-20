@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8F544C6E1BD697D500EF3EC7"
+               BuildableName = "Time_Warp_Calculator.app"
+               BlueprintName = "Time_Warp_Calculator"
+               ReferencedContainer = "container:Time_Warp_Calculator.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8F544C821BD697D500EF3EC7"
+               BuildableName = "Time_Warp_CalculatorTests.xctest"
+               BlueprintName = "Time_Warp_CalculatorTests"
+               ReferencedContainer = "container:Time_Warp_Calculator.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8F544C8D1BD697D500EF3EC7"
+               BuildableName = "Time_Warp_CalculatorUITests.xctest"
+               BlueprintName = "Time_Warp_CalculatorUITests"
+               ReferencedContainer = "container:Time_Warp_Calculator.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8F544C6E1BD697D500EF3EC7"
+            BuildableName = "Time_Warp_Calculator.app"
+            BlueprintName = "Time_Warp_Calculator"
+            ReferencedContainer = "container:Time_Warp_Calculator.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8F544C6E1BD697D500EF3EC7"
+            BuildableName = "Time_Warp_Calculator.app"
+            BlueprintName = "Time_Warp_Calculator"
+            ReferencedContainer = "container:Time_Warp_Calculator.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8F544C6E1BD697D500EF3EC7"
+            BuildableName = "Time_Warp_Calculator.app"
+            BlueprintName = "Time_Warp_Calculator"
+            ReferencedContainer = "container:Time_Warp_Calculator.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
